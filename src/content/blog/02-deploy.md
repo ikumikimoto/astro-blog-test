@@ -18,22 +18,23 @@ heroImage: '/blog-placeholder-1.jpg'
 
 ほとんどデフォルト設定ですが、一旦パブリックアクセスにします。
 
-画像
+![deploy](/deploy-1.png)
 
 ### 作成したバケットに出力されたプロジェクトをアップロード
 
-画像
+![deploy](/deploy-4.png)
+
 
 ### Amazon CloudFrontインスタンスの作成
 
 新規ディストリビューションを作成します。
 オリジンでは先ほど作成したS3を使用
 
-画像
+![deploy](/deploy-5.png)
 
-WFの設定も可能です。
+WAFの設定も可能です。
 
-画像
+![deploy](/deploy-8.png)
 
 後ほどBasic認証も設定してみます。
 （Web業界では何らかの認証は必須）
@@ -87,7 +88,7 @@ https://dx3i5sm6msfpe.cloudfront.net/index.html
 
 CloudFront Functions に JavaScriptの関数を作成
 
-画像
+![deploy](/deploy-11.png)
 
 紐付けを行うとindex.htmlがなくてもみられるようになります。
 https://dx3i5sm6msfpe.cloudfront.net/
@@ -129,3 +130,4 @@ function handler(event) {
 
 test:test
 でBasic認証も動作しました。
+今は検証のため外しています。
